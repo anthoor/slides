@@ -22,8 +22,11 @@ October 2015
 - Installation and Configuration
 - Syntax
 - Organizing Content
+- Lists
 - Adding Figures and Tables
 - Bibliography and Citations
+- Formulae and Equations
+- Preparing Presentations
 
 ---
 
@@ -312,6 +315,82 @@ This is a paragraph in the second sub-sub-section.
 
 ---
 
+### Lists
+
+------
+
+#### Bulleted Lists
+
+```latex
+% use begin..end itemize to add a bulleted list
+\begin{itemize}
+  \item first bullet point
+  \item second bullet point
+  % ...
+\end{itemize}
+
+% you can nest the lists
+\begin{itemize}
+  \item item at level 1
+  \begin{itemize}
+    \item item at level 2
+    % ...
+  \end{itemize}
+  % ...
+\end{itemize}
+```
+
+------
+
+#### Numbered Lists
+
+```latex
+% use begin..end enumerate for numbered lists
+\begin{enumerate}
+  \item first point
+  \item second point
+  % ...
+\end{enumerate}
+
+% you can nest the lists
+\begin{enumerate}
+  \item item at level 1
+  \begin{enumerate}
+    \item item at level 2
+    % ...
+  \end{enumerate}
+  % ...
+\end{enumerate}
+```
+
+------
+
+#### Hybrid Lists
+
+```latex
+% you can nest numbered list inside bulleted list and vice-versa for any number
+% of levels. the numbering and bulleting will be adjusted automatically.
+\begin{itemize}
+  \item bulleted item 1
+  \begin{enumerate}
+    \item numbered item 11
+    % ...
+  \end{enumerate}
+  % ...
+\end{itemize}
+
+\begin{enumerate}
+  \item numbered item 1
+  \begin{itemize}
+    \item bulleted item 11
+    % ...
+  \end{itemize}
+  % ...
+\end{enumerate}
+```
+
+---
+
 ### Adding Figures and Tables
 
 ------
@@ -557,19 +636,143 @@ pdflatex filename.tex
 
 ---
 
+### Formulae and Equations
+
+------
+
+#### Mathematical Formulae - I
+
+```latex
+% inline mode using \(...\) or $...$ to add formulae in line with the text.
+% alternatively, you can use begin..end with math
+% it is recommended to use \(...\) for inline math
+Pythagoras said that \(x^2 + y^2 = z^2\) in a right angled triangle where $x^2$
+is the square of the base and \begin{math}y^2\end{math} is the square of the 
+height and $z^2$ is the square of the hypoteneus.
+
+% for super-script (exponent), LaTeX uses ^ as shown above. if there are more
+% than one character in the exponent, use { } to group them
+\( x^{a+b} = x^a \times x^b \)
+
+% for sub-script, LaTeX uses _. if there are more than one character in the
+% subscript, use { } to group them
+\( 2 \times H_2 + O_2 = 2 \times H_2O \)
+
+1- Pentanol is represented as \( C_5 H_{11} OH \).
+```
+
+------
+
+#### Mathematical Formulae - II
+
+```latex
+% display mode for adding the formulae in a separate line
+% use begin..end with equation or displaymath, or \[...\]
+\begin{equation}
+  x^2 + y^2 = z^2
+\end{equation}
+
+% for single line equations without numbering
+\[E=m \times c^2\]
+
+% by default begin..end with equation will add numbering for the equation. if
+% you don't want numbering, you can use begin..end with align*
+\begin{align*}
+A & = B+C+D \\
+  & = B+E \\
+  & = F
+\end{align*}
+% this will align the equation lines w.r.t =
+```
+
+------
+
+#### Referencing Equations
+
+```latex
+% LaTeX consistently uses label and ref for referencing
+\begin{equation}
+  \label{very-important-equation}
+  % ...
+\end{equation}
+
+% ...
+\section{A Later Section}
+As shown in the very important equation (\ref{very-important-equation}), ...
+```
+
+---
+
+### Preparing Presentations
+
+------
+
+#### Introduction to Beamer
+- `beamer` is a `documentclass` provided by LaTeX to handle presentations
+- slides are called `frame`s
+- uses standard LaTeX commands like `title`, `author`, `institue`, etc. to create title slide
+- it supports content division into sections, sub-sections, etc. and `\tableofcontents`
+- standard LaTeX syntax apply for lists, images, tables, equations, etc.
+
+------
+
+#### Defining Slides
+
+```latex
+\documentclass{beamer}
+
+\begin{document}
+
+  % each slide is a frame in beamer
+  \begin{frame}
+    \frametitle{Title of Frame}
+    % ...
+  \end{frame}
+
+  % or alternatively
+  \begin{frame}{Title of Frame}
+    % ...
+  \end{frame}
+
+\end{document}
+```
+
+------
+
+#### Adding Effects
+- a simple reveal effect is supported by the lists
+
+```latex
+\begin{frame}
+  \begin{itemize}
+    \item<1-> item visible from first slide onwards
+    \item<-2> item visible till second slide
+    \item<3> item visible only on third slide
+    \item<4-> item visible from fourth slide onwards
+    % ...
+  \end{itemize}
+\end{frame}
+
+% each item in the above list will create a new page in the PDF output, giving
+% an impression that there is animation in the presentation
+```
+
+---
+
 ### References
 
 ------
 
-#### Slide preparation
+#### For this presentation
 - Slides prepared using [reveal.js](https://github.com/hakimel/reveal.js)
 - Edited in [Visual Studio Code](https://github.com/microsoft/vscode)
 - Index page prepared using [Bootstrap](https://github.com/twbs/bootstrap)
 - Slides are hosted using [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
+- Source code for this slide available in [GitHub](https://github.com/anthoor/slides/tree/main/latex)
 
 ------
 
-#### For reading
+#### Further reading
 - [Markup Language](https://en.wikipedia.org/wiki/Markup_language)
 - [Free and Open Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [Overleaf Documentation](https://www.overleaf.com/learn)

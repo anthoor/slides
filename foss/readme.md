@@ -155,15 +155,16 @@ Note:
 
 ------
 
-#### Slide preparation
+#### For this presentation
 - Slides prepared using [reveal.js](https://github.com/hakimel/reveal.js)
 - Edited in [Visual Studio Code](https://github.com/microsoft/vscode)
 - Index page prepared using [Bootstrap](https://github.com/twbs/bootstrap)
 - Slides are hosted using [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
+- Source code for this slide available in [GitHub](https://github.com/anthoor/slides/tree/main/foss)
 
 ------
 
-#### For reading
+#### Further reading
 - [Free Software Foundation](https://www.fsf.org/)
 - [Free and Open Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [GNU/Linux Distribution Timeline](https://futurist.se/gldt/wp-content/uploads/12.10/gldt1210.svg)
