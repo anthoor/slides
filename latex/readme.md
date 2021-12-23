@@ -58,6 +58,11 @@ October 2015
 - LaTeX is a collection of macros
 
 </div>
+<div>
+
+_Images from Wikipedia_
+
+<div>
 
 Note:
 - Knuth: Turing prize (1974), von Neuman prize (1995), KMP algorithm
@@ -773,6 +778,8 @@ As shown in the very important equation (\ref{very-important-equation}), ...
 ------
 
 #### Further reading
+- [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
+- [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport)
 - [Markup Language](https://en.wikipedia.org/wiki/Markup_language)
 - [Free and Open Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [Overleaf Documentation](https://www.overleaf.com/learn)
