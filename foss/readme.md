@@ -9,7 +9,7 @@ _`lallu[dot]anthoor[at]pm[dot]me`_
 
 <br>
 
-`https://bit.ly/fossstcet`
+`https://bit.ly/fossstm`
 
 ---
 
