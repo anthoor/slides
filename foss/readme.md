@@ -18,8 +18,8 @@ _`lallu[dot]anthoor[at]pm[dot]me`_
 - What is FOSS?
 - Why FOSS is important?
 - Demo
-- How you can be part of FOSS?
 - Why should you be part of FOSS?
+- How you can be part of FOSS?
 
 ---
 
