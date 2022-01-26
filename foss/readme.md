@@ -88,7 +88,7 @@ source code openly available. This is what happened with projects like [kubernet
 [Kafka](https://github.com/apache/kafka) (LinkedIn) and [OpenUI5](https://github.com/sap/openui5) (SAP). The
 second way is when a person or a group of people come toghether to realise an idea and decide
 to make it available as open source library. For example, [hugo](https://github.com/gohugoio/hugo) and [cobra](https://github.com/spf13/cobra) developed by Steve Francia,
-[Linux kernel](https://github.com/torvalds/linux) developed by Linux Torvalds, or [ANTLR](https://github.com/antlr/antlr4) by Terence Parr.
+[Linux kernel](https://github.com/torvalds/linux) developed by Linus Torvalds, or [ANTLR](https://github.com/antlr/antlr4) by Terence Parr.
 
 Irrespective of whether they are started by a small group of individuals or a giant organization,
 once the source code is made public, everyone contributes to it. These contributions are done
@@ -113,12 +113,13 @@ Note:
 Starting with storing of the source code till making the final product available for download, a
 software project incurs various costs. If everyone is working voluntarily, how is this cost met?
 What is the motivation for people to work on it if there will be no salary? Well, many tools like
-[GitHub](https://github.com) and GitLab allow free storage of source code for open source projects. The cost for them is
-covered from the revenue earned from their paying customers. Many open source projects accept
-donations and generate revenue through merchandise. Some open source projects tend to offer paid
-support for people and industry. Some projects will also have a paid version in addition to the
-open sourced one. The paid version will have more features and will also have an official support
-channel where the needs of the paying customers will be addressed in a dedicated manner.
+[GitHub](https://github.com) and [GitLab](https://gitlab.com) allow free storage of source code 
+for open source projects. The cost for them is covered from the revenue earned from their paying
+customers. Many open source projects accept donations and generate revenue through merchandise.
+Some open source projects tend to offer paid support for people and industry. Some projects will
+also have a paid version in addition to the open sourced one. The paid version will have more
+features and will also have an official support channel where the needs of the paying customers
+will be addressed in a dedicated manner.
 
 ---
 
@@ -134,9 +135,9 @@ Note:
 We are currently moving towards a subscription based culture. Whether it is software or something
 as simple as watching a movie, everything is now available as subscriptions. This really blurs the
 line between who owns the content. A few years back, if you pay some money, you would get a CD/DVD
-of a movie which you can watch whenever you want for as long as the disk is usable. Now, if you want
-to watch a movie, you have to keep paying the OTT platforms money every month. What you get is the
-permission to watch it. You don't really own the movie.
+of a movie which you can watch whenever you want for as long as the disk is usable, without any
+extra cost. Now, if you want to watch a movie, you have to keep paying the OTT platforms money
+every month. What you get is the permission to watch it. You don't really own the movie.
 
 But with FOSS, you get the freedom to own the software (without paying anything). You control how
 the software works. You get to see how the software works internally and you can modify any part
