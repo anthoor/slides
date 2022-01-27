@@ -304,22 +304,25 @@ compiled and bundled into a software product, etc.
 ------
 
 #### QEMU & UTM
-- QEMU
+- [QEMU](https://gitlab.com/qemu-project/qemu)
   - virtualization software
   - can emulate i386, x86_64, arm, aarch64, ppc, ppc64, etc.
   - in-built disk image manager to handle virtual disk drives
   - command line utility
-- UTM
+- [UTM](https://github.com/utmapp/UTM)
   - a front-end for QEMU
   - abstracts all the command line options of QEMU under easy to understand GUI
+
+Note:
+qemu-system-x86_64 -smp cores=2 -m 512 -drive file=fedoraraw.qcow2,if=virtio -display none -net bridge,br=virbr0 -net nic,model=virtio -usb -device usb-ehci -device usb-kbd -device usb-mouse
 
 ------
 
 #### Kubuntu
 - Ubuntu with KDE Plasma desktop environment
-- Beginner friendly and graphically similar to Windows
-- Provides support for widgets
-- Comes with Plasma based applications for common tasks
+- beginner friendly and graphically similar to Windows
+- provides support for widgets
+- comes with Plasma based applications for common tasks
 
 ------
 
@@ -328,19 +331,69 @@ compiled and bundled into a software product, etc.
 - [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh/) adds an easy to use plugin framework and a bunch of useful plugins on top of `zsh`
 - [PowerLevel10k](https://github.com/romkatv/powerlevel10k) is a theme for Oh-My-Zsh which gives a "cool looking" yet functional and feature rich terminal experience
 
-Note:
-1. QEMU, UTM
-2. Kubuntu: KDE plasma, widgets, settings, Dolphin, Kate
-3. Zsh, OhMyZsh, Powerlevel10k
-4. libreoffice
-5. TeX with Kile
-6. Blender
-7. Audacity
-8. JGraph
-9.  Numpy, Scipy, Pandas, Plotly
-10. Octave
-11. OBS Studio
-12. VS Code
+------
+
+#### LibreOffice
+- [LibreOffice](https://git.libreoffice.org/core/+/refs/heads/master) is an open source alternative to Microsoft Office
+- LibreOffice Writer - equivalent of MS Word
+- LibreOffice Calc - equivalent of MS Excel
+- LibreOffice Impress - equivalent of MS PowerPoint
+- LibreOffice Base - equivalent of MS Access
+
+------
+
+#### LaTeX with Kile
+- [LaTeX](https://github.com/latex3/latex2e) is a markup language which produces standardized output
+- widely used in higher studies and research communities and in publishing industry
+- [Kile](https://invent.kde.org/office/kile) is a native KDE based editor for LaTeX
+
+------
+
+#### draw.io
+- [draw.io](https://github.com/jgraph/drawio) is a general purpose diagramming tool
+- Online (https://app.diagrams.net/) and offline editions available
+- diagrams can be exported as SVG (vector graphics) that does not distort image when zoomed in
+
+------
+
+#### Blender & Audacity
+- Blender
+  - 2D/3D modeling software
+  - animations and VFX
+  - video editing
+- Audacity
+  - cross-platform multi-track audio editor
+  - allows recording, import/export, editing and effects
+  - supports plugins  
+
+------
+
+#### Visual Studio Code
+- light-weight and powerful text editor
+- integrated Git, Terminal
+- built in support for JavaScript, TypeScript and NodeJS
+- extension capability to support other languages and other dev tools
+
+------
+
+#### OBS Studio
+- [OBS Studio](https://github.com/obsproject/obs-studio) is used for recording video and live streaming
+- easy to use platform with support for various plugins
+- studio mode with easy switching between scenes
+- combine multiple input sources (audio and video) into one stream/video output
+
+------
+
+#### darktable
+- [darktable](https://github.com/darktable-org/darktable) is an open source photography workflow application and raw developer
+- open source alternative to Adobe Lightroom
+- non-destructive photo/raw editor
+
+------
+
+#### Octave
+- open source alternative for MATLAB
+- used for image and signal processing
 
 ---
 
